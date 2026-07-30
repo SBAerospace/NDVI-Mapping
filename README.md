@@ -66,3 +66,32 @@ The payload automatically tracks flight phases, monitors sensor availability, ha
 | AS7343 | Spectral analysis |
 | MPU6050 | Acceleration and gyroscope measurements |
 | Microcontroller | Payload processing and control |
+
+---
+
+## Flight Status Indicators
+
+### Neopixel Status
+
+The onboard Neopixel indicates current mission state:
+
+| Status | Color |
+|--------|-------|
+| Initializing | Yellow |
+| Launching | Green |
+| Floating | Cyan |
+| Terminating | Blue |
+| Unknown | Gray |
+
+---
+
+### GO LED Behavior
+
+The GO LED indicates payload readiness and telemetry streaming:
+
+| Condition | LED Pattern |
+|-----------|-------------|
+| PBF inserted, no streaming | 5 seconds ON / 5 seconds OFF |
+| PBF removed, no streaming | 1 second ON / 1 second OFF |
+| PBF inserted, streaming | 3 seconds ON / 3 seconds OFF |
+| PBF removed, streaming | Solid ON |
