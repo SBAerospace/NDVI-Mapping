@@ -95,3 +95,38 @@ The GO LED indicates payload readiness and telemetry streaming:
 | PBF removed, no streaming | 1 second ON / 1 second OFF |
 | PBF inserted, streaming | 3 seconds ON / 3 seconds OFF |
 | PBF removed, streaming | Solid ON |
+
+---
+
+## Data Collection
+
+The payload records telemetry once every second and stores measurements in: `/sd/WORLD_15.txt`
+
+The output file contains **39 data fields**:
+
+| Field | Description |
+|-------|-------------|
+| Flight Phase | Current mission state |
+| Elapsed Time | Time since previous sample |
+| Packets | Number of telemetry packets received |
+| WV Time | WorldView timestamp |
+| WV Latitude | GPS latitude |
+| WV Longitude | GPS longitude |
+| WV Altitude | GPS altitude |
+| WV Speed | Ground speed |
+| WV Heading | Direction of travel |
+| WV Velocity Down | Vertical velocity |
+| WV Pressure | Telemetry pressure |
+| WV Temperature | Telemetry temperature |
+| Lux | Ambient light intensity |
+| IR | Infrared light |
+| Visible | Visible light |
+| Full Spectrum | Total spectrum intensity |
+| BME Temp | Environmental temperature |
+| BME Humidity | Relative humidity |
+| BME Pressure | Atmospheric pressure |
+| BME Altitude | Calculated altitude |
+| AS7343 Channels | Spectral measurements |
+| Acceleration | X/Y/Z acceleration |
+| Gyroscope | X/Y/Z rotational velocity |
+| MPU Temperature | IMU temperature |
