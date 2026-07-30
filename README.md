@@ -54,3 +54,15 @@ The payload automatically tracks flight phases, monitors sensor availability, ha
   - Individual sensor availability checks
   - Continues operation if sensors fail
   - Missing sensor values recorded as `"N/A"`
+
+## Hardware Components
+
+| Component | Purpose |
+|-----------|---------|
+| WorldView Telemetry Module | Flight telemetry and GPS data |
+| SD Card Module | Data storage |
+| TSL2591 | High-resolution ambient light sensing |
+| BME280 | Temperature, humidity, and pressure sensing |
+| AS7343 | Spectral analysis |
+| MPU6050 | Acceleration and gyroscope measurements |
+| Microcontroller | Payload processing and control |
