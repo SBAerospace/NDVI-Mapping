@@ -130,3 +130,17 @@ The output file contains **39 data fields**:
 | Acceleration | X/Y/Z acceleration |
 | Gyroscope | X/Y/Z rotational velocity |
 | MPU Temperature | IMU temperature |
+
+---
+
+## Software Architecture
+
+### Initialization
+
+At startup, the system:
+
+1. Mounts the SD card.
+2. Initializes the I2C communication bus.
+3. Detects connected sensors.
+4. Configures sensor parameters.
+5. Begins telemetry collection.
