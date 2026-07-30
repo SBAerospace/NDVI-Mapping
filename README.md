@@ -144,3 +144,15 @@ At startup, the system:
 3. Detects connected sensors.
 4. Configures sensor parameters.
 5. Begins telemetry collection.
+
+---
+
+### Main Data Loop
+
+During flight:
+
+1. WorldView telemetry is continuously updated.
+2. Flight phase changes are detected.
+3. Sensor readings are collected every second.
+4. Data is formatted into CSV format.
+5. Measurements are written to the SD card.
